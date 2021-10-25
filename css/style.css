@@ -82,14 +82,14 @@ body{
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    position: fixed;
-    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 
 .nav_links{
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 
@@ -99,17 +99,13 @@ body{
   min-width: 250px;
 }
 
-.card > header{
-  align-items: start;
-  
-}
-
-#logo{
-  animation:none;
-}
 
 }
-
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        animation-delay: -42s;
+    }
+}
 
 
 @media print {
